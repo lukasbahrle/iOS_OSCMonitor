@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA66233B2436F6AF00DA344A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66233A2436F6AF00DA344A /* AppDelegate.swift */; };
+		DA66233D2436F6AF00DA344A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66233C2436F6AF00DA344A /* SceneDelegate.swift */; };
+		DA66233F2436F6AF00DA344A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66233E2436F6AF00DA344A /* ViewController.swift */; };
+		DA6623422436F6AF00DA344A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6623402436F6AF00DA344A /* Main.storyboard */; };
+		DA6623442436F6B100DA344A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6623432436F6B100DA344A /* Assets.xcassets */; };
+		DA6623472436F6B100DA344A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6623452436F6B100DA344A /* LaunchScreen.storyboard */; };
+		DA6623522436F6B100DA344A /* OSC_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6623512436F6B100DA344A /* OSC_MonitorTests.swift */; };
+		DA66235D2436F6B100DA344A /* OSC_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66235C2436F6B100DA344A /* OSC_MonitorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA66234E2436F6B100DA344A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA66232F2436F6AF00DA344A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA6623362436F6AF00DA344A;
+			remoteInfo = "OSC Monitor";
+		};
+		DA6623592436F6B100DA344A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA66232F2436F6AF00DA344A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA6623362436F6AF00DA344A;
+			remoteInfo = "OSC Monitor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA6623372436F6AF00DA344A /* OSC Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSC Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA66233A2436F6AF00DA344A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA66233C2436F6AF00DA344A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DA66233E2436F6AF00DA344A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA6623412436F6AF00DA344A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA6623432436F6B100DA344A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA6623462436F6B100DA344A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA6623482436F6B100DA344A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA66234D2436F6B100DA344A /* OSC MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSC MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6623512436F6B100DA344A /* OSC_MonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSC_MonitorTests.swift; sourceTree = "<group>"; };
+		DA6623532436F6B100DA344A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6623582436F6B100DA344A /* OSC MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSC MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA66235C2436F6B100DA344A /* OSC_MonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSC_MonitorUITests.swift; sourceTree = "<group>"; };
+		DA66235E2436F6B100DA344A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA6623342436F6AF00DA344A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA66234A2436F6B100DA344A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA6623552436F6B100DA344A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA66232E2436F6AF00DA344A = {
+			isa = PBXGroup;
+			children = (
+				DA6623392436F6AF00DA344A /* OSC Monitor */,
+				DA6623502436F6B100DA344A /* OSC MonitorTests */,
+				DA66235B2436F6B100DA344A /* OSC MonitorUITests */,
+				DA6623382436F6AF00DA344A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA6623382436F6AF00DA344A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA6623372436F6AF00DA344A /* OSC Monitor.app */,
+				DA66234D2436F6B100DA344A /* OSC MonitorTests.xctest */,
+				DA6623582436F6B100DA344A /* OSC MonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA6623392436F6AF00DA344A /* OSC Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				DA66233A2436F6AF00DA344A /* AppDelegate.swift */,
+				DA66233C2436F6AF00DA344A /* SceneDelegate.swift */,
+				DA66233E2436F6AF00DA344A /* ViewController.swift */,
+				DA6623402436F6AF00DA344A /* Main.storyboard */,
+				DA6623432436F6B100DA344A /* Assets.xcassets */,
+				DA6623452436F6B100DA344A /* LaunchScreen.storyboard */,
+				DA6623482436F6B100DA344A /* Info.plist */,
+			);
+			path = "OSC Monitor";
+			sourceTree = "<group>";
+		};
+		DA6623502436F6B100DA344A /* OSC MonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA6623512436F6B100DA344A /* OSC_MonitorTests.swift */,
+				DA6623532436F6B100DA344A /* Info.plist */,
+			);
+			path = "OSC MonitorTests";
+			sourceTree = "<group>";
+		};
+		DA66235B2436F6B100DA344A /* OSC MonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA66235C2436F6B100DA344A /* OSC_MonitorUITests.swift */,
+				DA66235E2436F6B100DA344A /* Info.plist */,
+			);
+			path = "OSC MonitorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA6623362436F6AF00DA344A /* OSC Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA6623612436F6B100DA344A /* Build configuration list for PBXNativeTarget "OSC Monitor" */;
+			buildPhases = (
+				DA6623332436F6AF00DA344A /* Sources */,
+				DA6623342436F6AF00DA344A /* Frameworks */,
+				DA6623352436F6AF00DA344A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OSC Monitor";
+			productName = "OSC Monitor";
+			productReference = DA6623372436F6AF00DA344A /* OSC Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA66234C2436F6B100DA344A /* OSC MonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA6623642436F6B100DA344A /* Build configuration list for PBXNativeTarget "OSC MonitorTests" */;
+			buildPhases = (
+				DA6623492436F6B100DA344A /* Sources */,
+				DA66234A2436F6B100DA344A /* Frameworks */,
+				DA66234B2436F6B100DA344A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA66234F2436F6B100DA344A /* PBXTargetDependency */,
+			);
+			name = "OSC MonitorTests";
+			productName = "OSC MonitorTests";
+			productReference = DA66234D2436F6B100DA344A /* OSC MonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA6623572436F6B100DA344A /* OSC MonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA6623672436F6B100DA344A /* Build configuration list for PBXNativeTarget "OSC MonitorUITests" */;
+			buildPhases = (
+				DA6623542436F6B100DA344A /* Sources */,
+				DA6623552436F6B100DA344A /* Frameworks */,
+				DA6623562436F6B100DA344A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA66235A2436F6B100DA344A /* PBXTargetDependency */,
+			);
+			name = "OSC MonitorUITests";
+			productName = "OSC MonitorUITests";
+			productReference = DA6623582436F6B100DA344A /* OSC MonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA66232F2436F6AF00DA344A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Lukas Bahrle Santana";
+				TargetAttributes = {
+					DA6623362436F6AF00DA344A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					DA66234C2436F6B100DA344A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = DA6623362436F6AF00DA344A;
+					};
+					DA6623572436F6B100DA344A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = DA6623362436F6AF00DA344A;
+					};
+				};
+			};
+			buildConfigurationList = DA6623322436F6AF00DA344A /* Build configuration list for PBXProject "OSC Monitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA66232E2436F6AF00DA344A;
+			productRefGroup = DA6623382436F6AF00DA344A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA6623362436F6AF00DA344A /* OSC Monitor */,
+				DA66234C2436F6B100DA344A /* OSC MonitorTests */,
+				DA6623572436F6B100DA344A /* OSC MonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA6623352436F6AF00DA344A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6623472436F6B100DA344A /* LaunchScreen.storyboard in Resources */,
+				DA6623442436F6B100DA344A /* Assets.xcassets in Resources */,
+				DA6623422436F6AF00DA344A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA66234B2436F6B100DA344A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA6623562436F6B100DA344A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA6623332436F6AF00DA344A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA66233F2436F6AF00DA344A /* ViewController.swift in Sources */,
+				DA66233B2436F6AF00DA344A /* AppDelegate.swift in Sources */,
+				DA66233D2436F6AF00DA344A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA6623492436F6B100DA344A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6623522436F6B100DA344A /* OSC_MonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA6623542436F6B100DA344A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA66235D2436F6B100DA344A /* OSC_MonitorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA66234F2436F6B100DA344A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA6623362436F6AF00DA344A /* OSC Monitor */;
+			targetProxy = DA66234E2436F6B100DA344A /* PBXContainerItemProxy */;
+		};
+		DA66235A2436F6B100DA344A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA6623362436F6AF00DA344A /* OSC Monitor */;
+			targetProxy = DA6623592436F6B100DA344A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA6623402436F6AF00DA344A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA6623412436F6AF00DA344A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA6623452436F6B100DA344A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA6623462436F6B100DA344A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA66235F2436F6B100DA344A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA6623602436F6B100DA344A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA6623622436F6B100DA344A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKA5LU2QKN;
+				INFOPLIST_FILE = "OSC Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukasbahrle.OSCMonitor.OSC-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA6623632436F6B100DA344A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKA5LU2QKN;
+				INFOPLIST_FILE = "OSC Monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukasbahrle.OSCMonitor.OSC-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA6623652436F6B100DA344A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKA5LU2QKN;
+				INFOPLIST_FILE = "OSC MonitorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukasbahrle.OSCMonitor.OSC-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSC Monitor.app/OSC Monitor";
+			};
+			name = Debug;
+		};
+		DA6623662436F6B100DA344A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKA5LU2QKN;
+				INFOPLIST_FILE = "OSC MonitorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukasbahrle.OSCMonitor.OSC-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSC Monitor.app/OSC Monitor";
+			};
+			name = Release;
+		};
+		DA6623682436F6B100DA344A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKA5LU2QKN;
+				INFOPLIST_FILE = "OSC MonitorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukasbahrle.OSCMonitor.OSC-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OSC Monitor";
+			};
+			name = Debug;
+		};
+		DA6623692436F6B100DA344A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HKA5LU2QKN;
+				INFOPLIST_FILE = "OSC MonitorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukasbahrle.OSCMonitor.OSC-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OSC Monitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA6623322436F6AF00DA344A /* Build configuration list for PBXProject "OSC Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA66235F2436F6B100DA344A /* Debug */,
+				DA6623602436F6B100DA344A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA6623612436F6B100DA344A /* Build configuration list for PBXNativeTarget "OSC Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA6623622436F6B100DA344A /* Debug */,
+				DA6623632436F6B100DA344A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA6623642436F6B100DA344A /* Build configuration list for PBXNativeTarget "OSC MonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA6623652436F6B100DA344A /* Debug */,
+				DA6623662436F6B100DA344A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA6623672436F6B100DA344A /* Build configuration list for PBXNativeTarget "OSC MonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA6623682436F6B100DA344A /* Debug */,
+				DA6623692436F6B100DA344A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA66232F2436F6AF00DA344A /* Project object */;
+}
