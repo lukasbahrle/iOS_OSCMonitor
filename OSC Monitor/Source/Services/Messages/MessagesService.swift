@@ -30,7 +30,7 @@ class MessagesService: MessagesServiceType{
     private var testMessageArrived = false
     private var testing_mode = false
     
-    init(testing_mode: Bool = true) {
+    init(testing_mode: Bool = false) {
         self.testing_mode = testing_mode
         oscPublisher = PassthroughSubject<MessagesServiceItemType, Never>()
     }
