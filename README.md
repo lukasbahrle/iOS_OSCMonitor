@@ -1,2 +1,2 @@
 # OSC Monitor
-App to test incoming OSC messages on iOS.
+App to debug incoming OSC messages on iOS.
