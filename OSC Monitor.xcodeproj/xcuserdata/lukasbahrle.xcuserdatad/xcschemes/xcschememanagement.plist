@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>OSC MonitorTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DA6623362436F6AF00DA344A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA66234C2436F6B100DA344A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA6623572436F6B100DA344A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
