@@ -45,8 +45,6 @@ class MessageListViewController: UIViewController {
         configureAccessibilityIdentifiers()
         configureDataSource()
         
-        //tableView.rowHeight = UITableView.automaticDimension
-        //tableView.estimatedRowHeight = 600
         tableView.delegate = self
         tableView.separatorStyle = .none
     }

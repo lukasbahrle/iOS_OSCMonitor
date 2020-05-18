@@ -78,9 +78,18 @@ class Messages{
         
         self.items.append(message)
         
-        if items.count > 200 {
-            items.remove(at: 0)
-        }
+//        if items.count > 200 {
+//            let address = items[0].addressPattern
+//            if self.addressesLastMessage[message.addressPattern] == 0 {
+//                self.addressesLastMessage.removeValue(forKey: address)
+//                self.addresses = self.addresses.filter{$0 != address}
+//
+//                for (key, value) in addressesLastMessage {
+//                    addressesLastMessage[key] = value - 1
+//                }
+//            }
+//            items.remove(at: 0)
+//        }
         
         if self.addressesLastMessage[message.addressPattern] == nil {
             self.addresses.append(message.addressPattern)

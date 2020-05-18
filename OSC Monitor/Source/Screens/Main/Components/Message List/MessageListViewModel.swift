@@ -64,6 +64,7 @@ class MessageListViewModel: MessageListViewModelOutputType{
         }
         else{
             var groupedItems = [MessageCellViewModel]()
+            
             for item in addresses {
                 if let lastMessageIndex = addressesLastMessage[item], addressFilters.count == 0 || addressFilters.contains(item){
                      groupedItems.append(allItems[lastMessageIndex])

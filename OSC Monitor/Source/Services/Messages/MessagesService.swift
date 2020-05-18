@@ -118,7 +118,9 @@ extension MessagesService{
         
         /// send a test message to verify the connection
         client.port = port
-        let message = OSCMessage(messageWithAddressPattern: "/test/message" + String(Int.random(in: 0 ..< 10)), arguments: [1, Float.random(in: 0.0 ..< 10.0), "test", 0.21312312, 0.434435345, 0.45435456456, "test"])
+        let address = "/source/\(Int.random(in: 1 ..< 7))"
+        let arguments: [Any] = [Float.random(in: -1 ..< 1), Float.random(in: -1 ..< 1), Float.random(in: -1 ..< 1), Float.random(in: -1 ..< 1)]
+        let message = OSCMessage(messageWithAddressPattern: address, arguments: arguments)
         client.send(packet: message)
         
         /// keep sending test messages in `testing_mode`
