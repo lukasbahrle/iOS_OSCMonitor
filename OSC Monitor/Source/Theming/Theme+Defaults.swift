@@ -19,7 +19,9 @@ public extension Theme{
             backgroundColor: AppColors.background,
             tableBackgroundColor: AppColors.cell,
             tableLabelColor: .label,
-            tableLabelColorUnselected: .tertiaryLabel
+            tableLabelColorUnselected: .tertiaryLabel,
+            stateIndicator: ThemeStateIndicator(disconnected: AppColors.cell, listening: AppColors.tint, paused: .systemOrange, failed: .systemRed),
+            sizes: ThemeSizes(cellHeight: 70, tableCornerRadius: 6, buttonCornerRadius: 6)
         )
     }
 }

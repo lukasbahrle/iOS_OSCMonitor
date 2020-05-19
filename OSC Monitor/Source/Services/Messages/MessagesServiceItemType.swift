@@ -13,4 +13,4 @@ protocol MessagesServiceItemType {}
 
 
 extension Message: MessagesServiceItemType{}
-extension BundleModel: MessagesServiceItemType{}
+extension MessageBundle: MessagesServiceItemType{}

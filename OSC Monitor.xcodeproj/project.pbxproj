@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA270ED12473A654007EC70C /* UITraitCollection+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA270ED02473A654007EC70C /* UITraitCollection+Size.swift */; };
 		DA352031246E60170055F18D /* DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA352030246E60170055F18D /* DefaultValue.swift */; };
 		DA352033246E653E0055F18D /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA352032246E653E0055F18D /* MainState.swift */; };
 		DA352035246E65D10055F18D /* MainComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA352034246E65D10055F18D /* MainComponentsFactory.swift */; };
@@ -24,7 +25,7 @@
 		DA4885FE24425E17008FC6BB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4885FD24425E17008FC6BB /* MainViewModel.swift */; };
 		DA48860024425EAF008FC6BB /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4885FF24425EAF008FC6BB /* MainNavigator.swift */; };
 		DA48860324426101008FC6BB /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48860224426101008FC6BB /* ServiceProvider.swift */; };
-		DA48860A2443568F008FC6BB /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4886092443568F008FC6BB /* MessageModel.swift */; };
+		DA48860A2443568F008FC6BB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4886092443568F008FC6BB /* Message.swift */; };
 		DA48860E2443BB31008FC6BB /* MessagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48860D2443BB31008FC6BB /* MessagesService.swift */; };
 		DA4886122443C564008FC6BB /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4886112443C564008FC6BB /* MainFlowCoordinator.swift */; };
 		DA66233B2436F6AF00DA344A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66233A2436F6AF00DA344A /* AppDelegate.swift */; };
@@ -68,7 +69,7 @@
 		DAE910AA246BBB5F0029FD24 /* MessageListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE910A9246BBB5F0029FD24 /* MessageListState.swift */; };
 		DAE910AC246BBB9C0029FD24 /* MessageListViewModelInputOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE910AB246BBB9C0029FD24 /* MessageListViewModelInputOutput.swift */; };
 		DAE910AE246BBC460029FD24 /* AddressListViewModelInputOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE910AD246BBC460029FD24 /* AddressListViewModelInputOutput.swift */; };
-		DAEE9B402452A2F500D7A277 /* BundleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE9B3F2452A2F500D7A277 /* BundleModel.swift */; };
+		DAEE9B402452A2F500D7A277 /* MessageBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE9B3F2452A2F500D7A277 /* MessageBundle.swift */; };
 		DAEE9B422452A4B900D7A277 /* MessagesServiceItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE9B412452A4B900D7A277 /* MessagesServiceItemType.swift */; };
 		DAEE9B442452B31B00D7A277 /* UITableView+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE9B432452B31B00D7A277 /* UITableView+Scroll.swift */; };
 		DAF9F28724422C7D009CF474 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9F28624422C7D009CF474 /* AppFlowCoordinator.swift */; };
@@ -97,6 +98,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA270ED02473A654007EC70C /* UITraitCollection+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITraitCollection+Size.swift"; sourceTree = "<group>"; };
 		DA352030246E60170055F18D /* DefaultValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValue.swift; sourceTree = "<group>"; };
 		DA352032246E653E0055F18D /* MainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
 		DA352034246E65D10055F18D /* MainComponentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainComponentsFactory.swift; sourceTree = "<group>"; };
@@ -113,7 +115,7 @@
 		DA4885FD24425E17008FC6BB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		DA4885FF24425EAF008FC6BB /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		DA48860224426101008FC6BB /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
-		DA4886092443568F008FC6BB /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		DA4886092443568F008FC6BB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DA48860D2443BB31008FC6BB /* MessagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesService.swift; sourceTree = "<group>"; };
 		DA4886112443C564008FC6BB /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
 		DA6623372436F6AF00DA344A /* OSC Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSC Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +164,7 @@
 		DAE910A9246BBB5F0029FD24 /* MessageListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListState.swift; sourceTree = "<group>"; };
 		DAE910AB246BBB9C0029FD24 /* MessageListViewModelInputOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewModelInputOutput.swift; sourceTree = "<group>"; };
 		DAE910AD246BBC460029FD24 /* AddressListViewModelInputOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListViewModelInputOutput.swift; sourceTree = "<group>"; };
-		DAEE9B3F2452A2F500D7A277 /* BundleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleModel.swift; sourceTree = "<group>"; };
+		DAEE9B3F2452A2F500D7A277 /* MessageBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBundle.swift; sourceTree = "<group>"; };
 		DAEE9B412452A4B900D7A277 /* MessagesServiceItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesServiceItemType.swift; sourceTree = "<group>"; };
 		DAEE9B432452B31B00D7A277 /* UITableView+Scroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Scroll.swift"; sourceTree = "<group>"; };
 		DAF9F28624422C7D009CF474 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
@@ -462,8 +464,8 @@
 		DAE70903243AE702009D960A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DA4886092443568F008FC6BB /* MessageModel.swift */,
-				DAEE9B3F2452A2F500D7A277 /* BundleModel.swift */,
+				DA4886092443568F008FC6BB /* Message.swift */,
+				DAEE9B3F2452A2F500D7A277 /* MessageBundle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -521,6 +523,7 @@
 				DA3FEF912466F950007EDD04 /* UIButton+BackgroundColor.swift */,
 				DA3FEF932466F9A1007EDD04 /* UIImage+Color.swift */,
 				DA3FEF972467D60A007EDD04 /* UIColor+Hex.swift */,
+				DA270ED02473A654007EC70C /* UITraitCollection+Size.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -691,14 +694,14 @@
 				DAE910A4246A69F40029FD24 /* TableViewSeparatorView.swift in Sources */,
 				DAA5D55A24457DA800128CA7 /* UITableView+Cell.swift in Sources */,
 				DA6623782437001800DA344A /* MainViewController.swift in Sources */,
-				DA48860A2443568F008FC6BB /* MessageModel.swift in Sources */,
+				DA48860A2443568F008FC6BB /* Message.swift in Sources */,
 				DA4885FC24425DDD008FC6BB /* MainViewModelType.swift in Sources */,
 				DAC977CE244EB491000C924F /* Theme+Defaults.swift in Sources */,
 				DA8C8D52244C5BA500FB7645 /* ViewModelBased.swift in Sources */,
 				DAE910AE246BBC460029FD24 /* AddressListViewModelInputOutput.swift in Sources */,
 				DA6623762436FFF300DA344A /* AddressListViewController.swift in Sources */,
 				DA352033246E653E0055F18D /* MainState.swift in Sources */,
-				DAEE9B402452A2F500D7A277 /* BundleModel.swift in Sources */,
+				DAEE9B402452A2F500D7A277 /* MessageBundle.swift in Sources */,
 				DAEE9B422452A4B900D7A277 /* MessagesServiceItemType.swift in Sources */,
 				DAFE9A76245FEEDD005999C4 /* AppFlowCoordinatorDependencyProvider.swift in Sources */,
 				DA8C8D54244C5BCD00FB7645 /* StoryboardBased.swift in Sources */,
@@ -724,6 +727,7 @@
 				DAF9F28924422E47009CF474 /* FlowCoordinator.swift in Sources */,
 				DA352035246E65D10055F18D /* MainComponentsFactory.swift in Sources */,
 				DAE910A6246BBA4E0029FD24 /* ConnectionState.swift in Sources */,
+				DA270ED12473A654007EC70C /* UITraitCollection+Size.swift in Sources */,
 				DA352031246E60170055F18D /* DefaultValue.swift in Sources */,
 				DAA5D5522445718000128CA7 /* MessageListViewModel.swift in Sources */,
 				DA66233B2436F6AF00DA344A /* AppDelegate.swift in Sources */,

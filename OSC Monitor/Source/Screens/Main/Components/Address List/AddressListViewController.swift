@@ -21,6 +21,8 @@ class AddressListViewController: UIViewController {
     private var datasource:UITableViewDiffableDataSource<String, AddressCellViewModel>!
     private var snapshot: NSDiffableDataSourceSnapshot<String, AddressCellViewModel>!
        
+    private var cellHeight: CGFloat = 44
+    
     func initialize(viewModel: AddressListViewModel){
         self.viewModel = viewModel
         bind(to: viewModel)
@@ -84,7 +86,7 @@ extension AddressListViewController: UITableViewDelegate{
        }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return cellHeight
     }
 }
 
@@ -94,9 +96,10 @@ extension AddressListViewController: UITableViewDelegate{
 
 extension AddressListViewController: Themeable{
     func apply(theme: Theme) {
+        cellHeight = theme.sizes.cellHeight
         self.view.backgroundColor = theme.backgroundColor
         tableView.backgroundColor = theme.tableBackgroundColor
-        tableView.layer.cornerRadius = 10
+        tableView.layer.cornerRadius = theme.sizes.tableCornerRadius
         tableView.layer.masksToBounds = true
         tableView.separatorStyle = .none
     }

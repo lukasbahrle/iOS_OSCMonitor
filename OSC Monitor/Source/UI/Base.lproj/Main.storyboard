@@ -245,6 +245,7 @@
                     <connections>
                         <outlet property="clearButton" destination="ezQ-Yi-qNw" id="toB-6I-Vsi"/>
                         <outlet property="groupByAddressSwitch" destination="IHR-jP-FU8" id="pWC-A4-wVH"/>
+                        <outlet property="labelGroupByAddress" destination="BfU-na-kNA" id="og0-z2-iTL"/>
                         <outlet property="pauseButton" destination="bfp-GN-hc6" id="axG-tP-n8o"/>
                         <outlet property="stateIndicatorView" destination="Udn-jA-JfR" id="KqJ-B2-75X"/>
                         <outlet property="stateLabel" destination="Z4g-rI-Maw" id="M9b-P6-XMc"/>

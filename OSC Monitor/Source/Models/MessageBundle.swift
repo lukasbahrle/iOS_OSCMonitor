@@ -9,12 +9,12 @@
 import Foundation
 
 
-protocol BundleModelType{
+protocol MessageBundleType{
     var timeTag: Date {get}
     var messages: [MessageType] {get}
 }
 
-struct BundleModel: BundleModelType{
+struct MessageBundle: MessageBundleType{
     let timeTag: Date
     let messages: [MessageType]
 }

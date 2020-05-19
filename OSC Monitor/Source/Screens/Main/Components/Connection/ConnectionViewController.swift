@@ -126,7 +126,7 @@ extension ConnectionViewController: Themeable{
         connectionButtonConnectColor = theme.tintColor
         connectionButtonDisconnectColor = theme.disconnectColor
         
-        connectButton.layer.cornerRadius = 6
+        connectButton.layer.cornerRadius = theme.sizes.buttonCornerRadius
         connectButton.layer.masksToBounds = true
         connectButton.setTitleColor(.white, for: .normal)
         updateConnectionButton(for: viewModel.connectionButtonState)

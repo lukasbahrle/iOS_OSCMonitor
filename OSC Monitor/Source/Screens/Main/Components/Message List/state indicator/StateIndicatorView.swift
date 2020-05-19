@@ -58,10 +58,10 @@ class StateIndicatorView: UIView {
 
 extension StateIndicatorView: Themeable{
     func apply(theme: Theme) {
-        disconnectedColor = theme.tableBackgroundColor
-        connectedColor = theme.tintColor
-        pausedColor = .systemOrange
-        failureColor = .systemRed
+        disconnectedColor = theme.stateIndicator.disconnected
+        connectedColor = theme.stateIndicator.listening
+        pausedColor = theme.stateIndicator.paused
+        failureColor = theme.stateIndicator.failed
     }
     
     

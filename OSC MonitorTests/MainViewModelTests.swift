@@ -18,6 +18,7 @@ class MainViewModelTests: XCTestCase {
     var appear:PassthroughSubject<Void, Never>!
     var enterBackground:PassthroughSubject<Void, Never>!
     var enterForeground:PassthroughSubject<Void, Never>!
+    var traitCollectionDidChange:PassthroughSubject<TraitCollectionSize, Never>!
     var portInput:PassthroughSubject<String, Never>!
     var connection:PassthroughSubject<String, Never>!
     var disconnection:PassthroughSubject<Void, Never>!
@@ -34,6 +35,7 @@ class MainViewModelTests: XCTestCase {
         appear = PassthroughSubject<Void, Never>()
         enterBackground = PassthroughSubject<Void, Never>()
         enterForeground = PassthroughSubject<Void, Never>()
+        traitCollectionDidChange = PassthroughSubject<TraitCollectionSize, Never>()
         portInput = PassthroughSubject<String, Never>()
         connection = PassthroughSubject<String, Never>()
         disconnection = PassthroughSubject<Void, Never>()
@@ -45,7 +47,7 @@ class MainViewModelTests: XCTestCase {
         self.useCase = MockMainUseCase()
         self.viewModel = MainViewModel(useCase: self.useCase, navigator: StubAppCoordinator())
         
-        let input = MainViewModelInput(load: load.eraseToAnyPublisher(), appear: appear.eraseToAnyPublisher(), enterBackground: enterBackground.eraseToAnyPublisher(), enterForeground: enterForeground.eraseToAnyPublisher(), portInput: portInput.eraseToAnyPublisher(), connect: connection.eraseToAnyPublisher(), disconnect: disconnection.eraseToAnyPublisher(), groupByAddress: groupByAddress.eraseToAnyPublisher(), clear: clear.eraseToAnyPublisher(), togglePaused: togglePaused.eraseToAnyPublisher(), selectAddressFilterItem: selectAddressFilterItem.eraseToAnyPublisher())
+        let input = MainViewModelInput(load: load.eraseToAnyPublisher(), appear: appear.eraseToAnyPublisher(), enterBackground: enterBackground.eraseToAnyPublisher(), enterForeground: enterForeground.eraseToAnyPublisher(), traitCollectionDidChange: traitCollectionDidChange.eraseToAnyPublisher(), portInput: portInput.eraseToAnyPublisher(), connect: connection.eraseToAnyPublisher(), disconnect: disconnection.eraseToAnyPublisher(), groupByAddress: groupByAddress.eraseToAnyPublisher(), clear: clear.eraseToAnyPublisher(), togglePaused: togglePaused.eraseToAnyPublisher(), selectAddressFilterItem: selectAddressFilterItem.eraseToAnyPublisher())
         
         self.viewModel.bind(input: input)
     }

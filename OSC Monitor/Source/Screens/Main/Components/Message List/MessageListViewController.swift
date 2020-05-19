@@ -15,6 +15,7 @@ class MessageListViewController: UIViewController {
     
     @IBOutlet weak var stateLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var labelGroupByAddress: UILabel!
     @IBOutlet weak var groupByAddressSwitch: UISwitch!
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
@@ -29,6 +30,8 @@ class MessageListViewController: UIViewController {
     
     private var datasource:UITableViewDiffableDataSource<Section, MessageCellViewModel>!
     private var snapshot: NSDiffableDataSourceSnapshot<Section, MessageCellViewModel>!
+    
+    private var cellHeight: CGFloat = 44
     
     
     func initialize(viewModel: MessageListViewModel){
@@ -71,8 +74,15 @@ class MessageListViewController: UIViewController {
         
         viewModelPublishers.isGroupedByAddress
         .receive(on: RunLoop.main)
-        .sink(receiveValue: {[unowned self] isGrouped in
-            self.groupByAddressSwitch.isOn = isGrouped
+        .sink(receiveValue: {[weak self] isGrouped in
+            self?.groupByAddressSwitch.isOn = isGrouped
+        })
+        .store(in: &cancellables)
+        
+        viewModelPublishers.textGroupedByAddress
+        .receive(on: RunLoop.main)
+        .sink(receiveValue: {[weak self] text in
+            self?.labelGroupByAddress.text = text
         })
         .store(in: &cancellables)
         
@@ -108,7 +118,7 @@ class MessageListViewController: UIViewController {
 
 extension MessageListViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return cellHeight
     }
 }
 
@@ -137,21 +147,21 @@ private extension MessageListViewController {
 extension MessageListViewController: Themeable{
     func apply(theme: Theme) {
         
+        cellHeight = theme.sizes.cellHeight
+        
         self.view.backgroundColor = theme.backgroundColor
         tableView.backgroundColor = theme.tableBackgroundColor
-        tableView.layer.cornerRadius = 6
+        tableView.layer.cornerRadius = theme.sizes.tableCornerRadius
         tableView.layer.masksToBounds = true
-        //groupByAddressSwitch.onTintColor = theme.tintColor
         
-        //pauseButton.setBackgroundColor(theme.tableBackgroundColor, for: .normal)
-         pauseButton.backgroundColor = theme.tableBackgroundColor
-        pauseButton.layer.cornerRadius = 6
+        pauseButton.backgroundColor = theme.tableBackgroundColor
+        pauseButton.layer.cornerRadius = theme.sizes.buttonCornerRadius
         pauseButton.layer.masksToBounds = true
         pauseButton.setTitleColor(.white, for: .normal)
         pauseButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         
         clearButton.backgroundColor = theme.tableBackgroundColor
-        clearButton.layer.cornerRadius = 6
+        clearButton.layer.cornerRadius = theme.sizes.buttonCornerRadius
         clearButton.layer.masksToBounds = true
         clearButton.setTitleColor(.white, for: .normal)
         clearButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)

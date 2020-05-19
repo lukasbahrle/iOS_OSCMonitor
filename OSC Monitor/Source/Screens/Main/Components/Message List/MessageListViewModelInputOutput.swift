@@ -32,5 +32,6 @@ protocol MessageListViewModelOutputType {
 struct MessageListViewModelOutputPublishers{
     let items: AnyPublisher<[MessageCellViewModel], Never>
     var isGroupedByAddress: AnyPublisher<Bool, Never>
+    var textGroupedByAddress: AnyPublisher<String, Never>
     var state: AnyPublisher<MessageListState, Never>
 }

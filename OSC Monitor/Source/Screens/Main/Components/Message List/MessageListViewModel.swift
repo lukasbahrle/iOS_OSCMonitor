@@ -15,6 +15,7 @@ class MessageListViewModel: MessageListViewModelOutputType{
     // subjects
     private var itemsSubject = CurrentValueSubject<[MessageCellViewModel], Never>([])
     private var isGroupedByAddressSubject = CurrentValueSubject<Bool, Never>(false)
+    private var textGroupedByAddressSubject = CurrentValueSubject<String, Never>("")
     private var stateSubject = CurrentValueSubject<MessageListState, Never>(.notconnected)
    
     // output
@@ -22,7 +23,7 @@ class MessageListViewModel: MessageListViewModelOutputType{
     var isGroupedByAddress: Bool {isGroupedByAddressSubject.value}
     var state: MessageListState {stateSubject.value}
     var publishers: MessageListViewModelOutputPublishers{
-        MessageListViewModelOutputPublishers(items: itemsSubject.eraseToAnyPublisher(), isGroupedByAddress: isGroupedByAddressSubject.eraseToAnyPublisher(), state: stateSubject.eraseToAnyPublisher())
+        MessageListViewModelOutputPublishers(items: itemsSubject.eraseToAnyPublisher(), isGroupedByAddress: isGroupedByAddressSubject.eraseToAnyPublisher(), textGroupedByAddress: textGroupedByAddressSubject.eraseToAnyPublisher(), state: stateSubject.eraseToAnyPublisher())
     }
     
     private var cancellables: [AnyCancellable] = []
@@ -51,6 +52,10 @@ class MessageListViewModel: MessageListViewModelOutputType{
     func update(isGroupedByAddress isGrouped: Bool){
         self.isGroupedByAddressSubject.send(isGrouped)
         onUpdate()
+    }
+    
+    func onTraitCollectionDidChange(size: TraitCollectionSize){
+        textGroupedByAddressSubject.send(size.width == .regular ? "Group by address" : "Group")
     }
     
     private func onUpdate(){

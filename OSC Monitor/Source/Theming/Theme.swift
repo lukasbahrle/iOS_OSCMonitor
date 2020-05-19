@@ -9,6 +9,21 @@
 import Foundation
 import UIKit
 
+
+public struct ThemeStateIndicator {
+    let disconnected: UIColor
+    let listening: UIColor
+    let paused: UIColor
+    let failed: UIColor
+}
+
+public struct ThemeSizes {
+    let cellHeight: CGFloat
+    let tableCornerRadius: CGFloat
+    let buttonCornerRadius: CGFloat
+}
+
+
 public struct Theme {
     public var font: UIFont
     public var tintColor: UIColor
@@ -18,4 +33,6 @@ public struct Theme {
     public var tableBackgroundColor: UIColor
     public var tableLabelColor: UIColor
     public var tableLabelColorUnselected: UIColor
+    public var stateIndicator: ThemeStateIndicator
+    public var sizes: ThemeSizes
 }

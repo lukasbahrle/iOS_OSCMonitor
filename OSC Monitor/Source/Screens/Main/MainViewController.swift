@@ -9,6 +9,8 @@
 import UIKit
 import Combine
 
+
+
 class MainViewController: UIViewController, StoryboardBased, ViewModelBased, AppStateNotifiable {
     var appStateNotifier: AppStateNotifierType!
     var viewModel: MainViewModel!
@@ -18,6 +20,7 @@ class MainViewController: UIViewController, StoryboardBased, ViewModelBased, App
     private let appear = PassthroughSubject<Void, Never>()
     private let enterBackground = PassthroughSubject<Void, Never>()
     private let enterForeground = PassthroughSubject<Void, Never>()
+    private let traitCollectionDidChange = PassthroughSubject<TraitCollectionSize, Never>()
     private let connection = PassthroughSubject<String, Never>()
     private let clear = PassthroughSubject<Void, Never>()
     
@@ -52,6 +55,11 @@ class MainViewController: UIViewController, StoryboardBased, ViewModelBased, App
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         appear.send()
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        traitCollectionDidChange.send(traitCollection.traitCollectionSize())
     }
 
     
@@ -117,6 +125,7 @@ extension MainViewController{
             appear: appear.eraseToAnyPublisher(),
                                        enterBackground: enterBackground.eraseToAnyPublisher(),
                                        enterForeground: enterForeground.eraseToAnyPublisher(),
+                                       traitCollectionDidChange: traitCollectionDidChange.eraseToAnyPublisher(),
                                        portInput: connectionInput.portInput,
                                        connect: connectionInput.connect,
                                        disconnect: connectionInput.disconnect,

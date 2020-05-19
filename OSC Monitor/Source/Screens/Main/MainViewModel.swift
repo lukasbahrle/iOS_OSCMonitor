@@ -53,18 +53,20 @@ final class MainViewModel: MainViewModelType{
         
         input.enterBackground
         .sink(receiveValue: { [weak self] _ in
-            self?.stateMachine.disconnect()
-            /// save default values when app enters the background
-            self?.saveDefaultValues()
+            self?.onEnterBackground()
         })
         .store(in: &cancellables)
         
         
         input.enterForeground
         .sink(receiveValue: { [weak self] _ in
-            guard let port = self?.components.connectionViewModel.port else {return}
-            self?.stateMachine.connect(port: port)
-            
+            self?.onEnterForeground()
+        })
+        .store(in: &cancellables)
+        
+        input.traitCollectionDidChange
+        .sink(receiveValue: { [weak self] size in
+            self?.onTraitCollectionDidChange(size: size)
         })
         .store(in: &cancellables)
         
@@ -152,10 +154,24 @@ final class MainViewModel: MainViewModelType{
 }
 
 
+
+// MARK: View States
+
 extension MainViewModel{
     
-    func onEnterBackground(){
-        
+    private func onEnterBackground(){
+        stateMachine.disconnect()
+        /// save default values when app enters the background
+        saveDefaultValues()
+    }
+    
+    private func onEnterForeground(){
+        let port = components.connectionViewModel.port
+        stateMachine.connect(port: port)
+    }
+    
+    private func onTraitCollectionDidChange(size: TraitCollectionSize){
+        components.messageListViewModel.onTraitCollectionDidChange(size: size)
     }
     
 }
@@ -213,6 +229,7 @@ extension MainViewModel{
        stateMachine.disconnect()
    }
 }
+
 
 
 

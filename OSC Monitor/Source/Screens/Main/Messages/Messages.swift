@@ -49,7 +49,7 @@ class Messages{
                 self?.add(message: message)
                 self?.updateSubject.send(true)
             }
-            else if let bundle = message as? BundleModelType, var timeStamps = self?.bundleTimeStamps {
+            else if let bundle = message as? MessageBundleType, var timeStamps = self?.bundleTimeStamps {
                 timeStamps.append(bundle.timeTag)
                 let bundleIndex = timeStamps.count - 1
                 var firstItem = true

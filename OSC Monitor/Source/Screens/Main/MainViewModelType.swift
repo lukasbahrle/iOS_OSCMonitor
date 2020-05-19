@@ -19,6 +19,8 @@ struct MainViewModelInput: AddressListViewModelInputType, MessageListViewModelIn
     let enterBackground: AnyPublisher<Void, Never>
     /// called when the app will enters the foreground
     let enterForeground: AnyPublisher<Void, Never>
+    /// called when the trait collection changes
+    let traitCollectionDidChange: AnyPublisher<TraitCollectionSize, Never>
      /// called when the port input textfield is changed
     let portInput: AnyPublisher<String, Never>
     /// called when the connect action is triggered

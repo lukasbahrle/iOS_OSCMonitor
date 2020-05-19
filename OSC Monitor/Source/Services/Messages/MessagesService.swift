@@ -103,7 +103,7 @@ extension MessagesService: OSCPacketDestination{
             }
         }
         
-        let messageBundle = BundleModel(timeTag: bundle.timeTag.date(), messages: bundleMessages)
+        let messageBundle = MessageBundle(timeTag: bundle.timeTag.date(), messages: bundleMessages)
             self?.oscPublisher.send(messageBundle)
         }
     }
